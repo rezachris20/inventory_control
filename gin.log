@@ -1,0 +1,40 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /images/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /images/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] POST   /api/v1/user/register     --> backend-simple-pos/handler.(*userHandler).RegisterUser-fm (4 handlers)
+[GIN-debug] POST   /api/v1/user/login        --> backend-simple-pos/handler.(*userHandler).Login-fm (4 handlers)
+[GIN-debug] GET    /api/v1/user/fetch        --> backend-simple-pos/handler.(*userHandler).FetchUser-fm (5 handlers)
+[GIN-debug] GET    /api/v1/user/all          --> backend-simple-pos/handler.(*userHandler).Users-fm (5 handlers)
+[GIN-debug] GET    /api/v1/user/:id          --> backend-simple-pos/handler.(*userHandler).GetUserDetail-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/user/:id          --> backend-simple-pos/handler.(*userHandler).UpdatedUser-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/user              --> backend-simple-pos/handler.(*userHandler).DeleteUser-fm (5 handlers)
+[GIN-debug] POST   /api/v1/upload-avatar     --> backend-simple-pos/handler.(*userHandler).UploadAvatar-fm (5 handlers)
+[GIN-debug] GET    /api/v1/role              --> backend-simple-pos/handler.(*roleHandler).GetRoles-fm (5 handlers)
+[GIN-debug] POST   /api/v1/customer          --> backend-simple-pos/handler.(*customerHandler).RegisterCustomer-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/customer/:id      --> backend-simple-pos/handler.(*customerHandler).UpdateCustomer-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/customer          --> backend-simple-pos/handler.(*customerHandler).DeleteCustomer-fm (5 handlers)
+[GIN-debug] GET    /api/v1/customer          --> backend-simple-pos/handler.(*customerHandler).GetAllCustomer-fm (5 handlers)
+[GIN-debug] GET    /api/v1/category-product  --> backend-simple-pos/handler.(*categoryProductHandler).GetAllProductCategory-fm (5 handlers)
+[GIN-debug] POST   /api/v1/category-product  --> backend-simple-pos/handler.(*categoryProductHandler).RegisterProductCategory-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/category-product/:id --> backend-simple-pos/handler.(*categoryProductHandler).UpdateProductCategory-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/category-product  --> backend-simple-pos/handler.(*categoryProductHandler).DeleteProductCategory-fm (5 handlers)
+[GIN-debug] GET    /api/v1/supplier          --> backend-simple-pos/handler.(*supplierHandler).GetAllSupliers-fm (5 handlers)
+[GIN-debug] POST   /api/v1/supplier          --> backend-simple-pos/handler.(*supplierHandler).RegisterSupplier-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/supplier/:id      --> backend-simple-pos/handler.(*supplierHandler).UpdateSupplier-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/supplier          --> backend-simple-pos/handler.(*supplierHandler).DeleteSupplier-fm (5 handlers)
+[GIN-debug] GET    /api/v1/product           --> backend-simple-pos/handler.(*productHandler).GetAllProduct-fm (5 handlers)
+[GIN-debug] POST   /api/v1/product           --> backend-simple-pos/handler.(*productHandler).RegisterProduct-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/product/:id       --> backend-simple-pos/handler.(*productHandler).UpdateProduct-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/product           --> backend-simple-pos/handler.(*productHandler).DeleteProduct-fm (5 handlers)
+[GIN-debug] GET    /api/v1/pemesanan         --> backend-simple-pos/handler.(*penjualanHandler).GetAllPemesanan-fm (5 handlers)
+[GIN-debug] POST   /api/v1/pemesanan         --> backend-simple-pos/handler.(*penjualanHandler).CreatePemesanan-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/pemesanan/:id     --> backend-simple-pos/handler.(*penjualanHandler).UpdatePemesananDetail-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/pemesanan/:id     --> backend-simple-pos/handler.(*penjualanHandler).DeletePemesananDetail-fm (5 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [Sat, 27 Nov 2021 22:55:43 +07] "DELETE /api/v1/pemesanan/1 HTTP/1.1 200 12.5375ms "PostmanRuntime/7.28.4" "
+::1 - [Sat, 27 Nov 2021 22:56:06 +07] "GET /api/v1/pemesanan HTTP/1.1 200 142.4276ms "PostmanRuntime/7.28.4" "
+::1 - [Sat, 27 Nov 2021 22:57:36 +07] "DELETE /api/v1/pemesanan/1 HTTP/1.1 401 0s "PostmanRuntime/7.28.4" "
